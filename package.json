@@ -1,0 +1,20 @@
+{
+  "name": "node-web-scrape",
+  "version": "0.0.1",
+  "description": "Scrape le web.",
+  "main": "server.js",
+  "author": "Scotch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scotch-io/node-web-scraper"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "latest",
+    "crawler": "^1.1.2",
+    "ejs": "^2.5.8",
+    "express": "latest",
+    "request": "latest",
+    "yargs": "^11.0.0"
+  }
+}

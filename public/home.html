@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="/styles/style.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+        <title>SmartShop</title>
+        <script src="/scripts/app.js"></script>
+
+        <script type="text/javascript" src="/scripts/script1.js"></script>
+
+    </head>
+    <body>
+
+       <div class="top">
+
+                <!-- ask user to explore in the google shopping -->
+                <div class="strategy">
+                   <div class="title"><h1>SmartShop</h1></div> <br><br>
+                    <p class="hint"> Shopping with dreaming item </p><br>
+                    <div class="shoppingChoice">
+                        <form class="search" action="https://www.google.com/shopping?hl=en" method="get" target="_blank">
+                            <input type="search" class="add__description" name="q" value="" placeholder="Step 1: Please type in your target item...">
+                            <input type="submit" value="&#8629;" class="add__btn">
+                        </form>
+                            <!-- <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>  -->
+                    </div><br>
+
+                    <div class="shoppingChoice">
+                        <form class="search">
+                            <input type="text" class="add__description" placeholder="Step 2: Paste the URL from google shopping">
+                            <input type="submit" class="add__btn" value="&#8629;">
+                        </form>
+                    </div><br><br>
+
+
+                <!-- ask user to type in a specific retailer website -->
+                   <p class="hint"> Shopping with your intereted retailer </p><br>
+
+                    <div class="shoppingChoice">
+                       <form class="search">
+                            <input type="text" class="add__description" placeholder="Please type in retailer website...">
+                            <input type="submit" class="add__btn" value="&#8629;">
+                       </form>
+                        <!--<button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button> -->
+                    </div><br><br>
+                   <p class="hint"> Your choice of Cash Back website </p><br>
+                    <div>
+                        <script type="text/javascript" src="/scripts/script2.js"></script>
+                        <table>
+                              <!--legend>Please choose preferred cashback website</legend><br-->
+                              <tr><th><input type="checkbox" name="cashback" id="befrugal" value="BeFrugal" checked> BeFrugal </th></tr>
+                              <tr><th><input type="checkbox" name="cashback" id="top cashback" value="Top CashBack" checked onclick="hideMe('top cashback', 'Top CashBack')"> Top CashBack </th></tr>
+                              <tr><th><input type="checkbox" name="cashback" id="coupon cactus" value="Coupon Cactus" checked> Coupon Cactus </th></tr>
+                              <tr><th><input type="checkbox" name="cashback" id="mr. rebates" value="Mr. Rebates" checked> Mr. Rebates </th></tr>
+                              <tr><th><input type="checkbox" name="cashback" id="ebates" value="eBates" checked> ebates </th></tr>
+                              <tr><th><input type="checkbox" name="cashback" id="rebatesme" value="RebatesMe" checked> RebatesMe </th></tr>
+                        </table>
+                    </div>
+              </div>
+
+          </div>
+
+
+
+
+        <div class="result">
+
+            <div class="result_show retailer">
+                <h2><b>Retailer</b></h2><br>
+                <table id="tbRetailer">
+                  <thead>
+                      <th>Website</th>
+                      <th>Rating</th>
+                      <th>Details</th>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="result_show cashback">
+              <h2><b>Cashback</b></h2><br>
+              <table id=tbCashback>
+                <thead>
+                  <th>Website</th>
+                  <th>Discount (%)</th>
+                  <th>Link</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+
+            <div class="result_show gift card">
+              <h2><b>Giftcard</b></h2><br>
+              <table id="tbGifttCard">
+                <thead>
+                  <th>Website</th>
+                  <th>Discount (%)</th>
+                  <th>Link</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+
+
+            <div class="result_show price">
+                <h2><b>$Price</b></h2><br>
+                <table id="tbPrice">
+                    <thead>
+                        <th>Origial</th>
+                        <th>With CashBack</th>
+                        <th>With GiftCard</th>
+                        <th>With Both</th>
+                    </thead>
+                    <tbody></tbody>
+                 </table>
+            </div>
+
+
+            <div class="result_show coupon">
+                <h2 id="coupon"><b>Possibly Valid Coupon</b></h2><br>
+                <table id="tbCoupon">
+                    <thead>
+                        <th>code</th>
+                    </thead>
+                    <tbody></tbody>
+                </tabel>
+            </div>
+
+        </div>
+
+    </body>
+</html>
